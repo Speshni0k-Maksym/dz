@@ -1,10 +1,10 @@
-# Завдання 1
+# Task 1
 n = input("Введіть слово паліндромом: ")
 if n==n[::-1]:
     print(n)
 else:
     print("Це не слово паліндромом")
-# Завдання 2
+# Task 2
 text = "This is my Python code"
 print(text)
 text1 = input("Введіть букву яку хочете перерахувати в цьому рядку: ")
@@ -19,7 +19,7 @@ else:
         b = text.find(text1, b + 1)
     
     print(f"Буква '{text1}' зустрічається у рядку {count} разів.")
-# Завдання 3
+# Task 3
 text2 = input("Введіть 2 слова: ")
 text3 = text2.split()
 if len(text3) >= 2:

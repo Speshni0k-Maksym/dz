@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+:root {
+    --button-color: #69724F;
+    --main-color: #666363;
+    --text-color: #F5F5F5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+/* ---------------------------------header------------------------------- */
+.header-wrap {
+    height: 110px;
+    border: 1px solid var(--button-color);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    gap: 47px;
+}
+
+.menu a {
+    font-family: "Inter", sans-serif;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+.button {
+    width: 180px;
+    height: 70px;
+    background-color: var(--button-color);
+}
+
+.btn {
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.2px;
+    display: block;
+    padding: 23px 46px;
+}
+
+/* ------------------------------------------sec1--------------------------- */
+.sec1-wrap {
+    height: 900px;
+    background-image: url(/images/Rectangle\ 8.png);
+    gap: 92px;
+}
+
+.div1 h2 {
+    margin: 70px 150px 60px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--main-color);
+    text-align: right;
+}
+
+.div1 h1 {
+    margin: 60px 92px 512px 100px;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 81px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.div2_1 {
+    margin-top: 70px;
+    width: 1020px;
+    height: 90px;
+    background-color: var(--button-color);
+}
+
+.div2_1 h2 {
+    font-family: "Inter", sans-serif;
+    padding: 25px 700px 26px 40px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.73px;
+    color: var(--text-color);
+}
+
+.div2 p {
+    color: var(--main-color);
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    width: 998px;
+}
+
+.div2 .p1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.div2 .p2 {
+    margin-top: 30px;
+    margin-bottom: 492px;
+}
+
+.sec1-wrap .line {
+    width: 200px;
+    border: 1px solid var(--button-color);
+    margin-left: 410px;
+    margin-right: 580px;
+}
+.div3{
+    margin: 90px 620px 30px 621px;
+    color:#121212;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: right;
+    white-space: nowrap;
+    width: 359px;
+    height: 48px;
+}
+.sec2-wrap .line{
+    width: 200px;
+    border: 1px solid var(--button-color);
+    margin-left: 699px;
+    margin-right: 701px;
+}
+.photo{
+    gap: 54px;
+    margin-top: 30px;
+}
+

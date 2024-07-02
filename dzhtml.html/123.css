@@ -68,7 +68,7 @@ a {
 /* ------------------------------------------sec1--------------------------- */
 .sec1-wrap {
     height: 900px;
-    background-image: url(/images/Rectangle\ 8.png);
+    background-image: url(/dz/dzhtml.html/images/Rectangle\ 8.png);
     gap: 92px;
 }
 
@@ -130,11 +130,11 @@ a {
 .sec1-wrap .line {
     width: 200px;
     border: 1px solid var(--button-color);
-    margin-left: 410px;
+    margin-left: 360px;
     margin-right: 580px;
 }
 .div3{
-    margin: 90px 620px 30px 621px;
+    margin: 90px 540px 30px;
     color:#121212;
     font-family: "Lora", serif;
     font-weight: 700;
@@ -153,6 +153,40 @@ a {
 }
 .photo{
     gap: 54px;
-    margin-top: 30px;
+    width: 1362px;
+    height: 592px;
+    margin: 30px 119px 76px;
 }
-
+.div3_1{
+    height: 484px;
+    width: 300px;
+}
+.div3_2{
+    height: 484px;
+    width: 300px;
+}
+.div3_3{
+    height: 460px;
+    width: 300px;
+}
+.div3_4{
+    height: 460px;
+    width: 300px;
+}
+.photo p{
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    color: var(--main-color);
+}
+.photo h2{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+    color: #121212;
+    text-align: center;
+}

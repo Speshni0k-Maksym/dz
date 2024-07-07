@@ -1,42 +1,71 @@
-#    Password
-import random
-import string
-
-truechoice = ""
-len = int(input("Enter password len: "))
-while True:
-    choice = input("Enter what string you want a-upper, b-lower, c-number, d-punctuation (enter 'stop' to end choice): ")
-    if choice == "stop":
+# 05.07
+# Task 1
+p = 0
+n = 0
+list1 = [1, 2, 3, 4, 5, 6, -6, -5, -4, -3, -2, -1, 132, 456, 0, 0, 1, 4, 4, -6, 2, 6, -7]
+for i in list1:
+    if i >= 0:
+        p+=1
+    if i < 0:
+        n+=1
+print(f"Positive count: {p}, Negative count: {n}")
+# Task 2
+list2 = [1, 2, 3, 4, 5, 6, -6, -5, -4, -3, -2, -1, 132, 456, 0, 0, 1, 4, 4, -6, 2, 6, -7]
+for index, i in enumerate(list2):
+    if i < 0:
         break
     else:
-        if choice == "a":
-            truechoice += string.ascii_uppercase
-        elif choice == "b":
-            truechoice += string.ascii_lowercase
-        elif choice == "c":
-            truechoice += string.digits
-        elif choice == "d":
-            truechoice += string.punctuation
-        else:
-            print("Invalid choice please enter a, b, c, d, or stop")
-userPass = ""
-for i in range(len):
-    userPass += random.choice(truechoice)
-print(userPass)
+        continue
+print(f"First negative element is {i} its Index {index}")
 
-#    Game
-secret_number = random.randint(1, 100)
-att = 0
-while True:
-    user_number = int(input("Enter number from 1-100(5 attemps): "))
-    att += 1
-    if att>5:
-        print("You loose you attemps are more then 5")
-        break
-    elif user_number < secret_number:
-        print("Number is higher")
-    elif user_number > secret_number:
-        print("Number is lower")
+# Task 3
+list3 = [-6, -5, -4, -3, -2, -1, 132, 456, 0, 0, 1, 4, 4, -6, 2, 6, -7]
+for index, i in enumerate(list3):
+    if i > 0:
+            break
     else:
-        print(f"You win secret number is {secret_number} you try {att} time")
-        break
+        continue
+print(f"First positive element is {i} its Index {index}")
+
+# Task 4
+list4 = [0, 0, 1, 4, 4, -6, -2, -6, 7]
+ln = None
+li = -1
+for index, i in enumerate(list4):
+    if i < 0:
+        ln= i
+        li = index
+    else:
+        continue
+print(f"Last negative element: {ln}, Index: {li}")
+# 08.07
+#Task1
+def m_t(number):
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
+num = int(input("Введіть число для друку таблиці множення: "))
+m_t(num)
+#Task2
+def s_l(s):
+    return len(s)
+i_s = input("Введіть рядок: ")
+print(f"Довжина рядка: {s_l(i_s)}")
+#Task3
+def change_case(s):
+    return s.swapcase()
+i_st = input("Введіть рядок: ")
+print(f"Рядок зі зміненим регістром: {change_case(i_st)}")
+#Taks4
+def n_t(a, b, c):
+    return (a + b + c) / 3
+num1 = float(input("Введіть перше число: "))
+num2 = float(input("Введіть друге число: "))
+num3 = float(input("Введіть третє число: "))
+print(f"Середнє значення: {n_t(num1, num2, num3)}")
+#Task5
+def m_t(a, b, c):
+    return max(a, b, c)
+num1 = float(input("Введіть перше число: "))
+num2 = float(input("Введіть друге число: "))
+num3 = float(input("Введіть третє число: "))
+print(f"Максимальне число: {m_t(num1, num2, num3)}")
